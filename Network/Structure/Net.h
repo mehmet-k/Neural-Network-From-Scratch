@@ -8,17 +8,20 @@
 #include <vector>
 #include <string>
 #include "Layer.h"
+#include <iostream>
 
 class Net {
 public:
-    std::vector<Layer*> layers;
-    double numberOfLayers;
     double learningRate;
     std::string activationFunction;
 
     Net(double learningRate,std::string activationFunction){
         this->learningRate = learningRate;
         this->activationFunction = activationFunction;
+    }
+
+    Net(){
+
     }
 
     void addLayer(int numberOfNeurons){
@@ -36,8 +39,28 @@ public:
         return 0;
     }
 
+    //for testing
+    void printNeuronCountInLayers(){
+        std::cout<<"Number of neurons in each layer:\n ";
+        for(int i = 0; i< numberOfLayers;i++){
+            std::cout<<" " << i << " ";
+        }
+    }
+
+    void printSpecifiedConnectionWeightAndBias(int prevNeuronIndex,
+                                               int postLayerIndex, int postNeuronIndex){
+
+        Neuron * neuron = layers.at(postLayerIndex)->nodes.at(postNeuronIndex));
+        std::cout<< "Weigt: " <<
+        neuron->outputWeights.at(prevNeuronIndex)
+        << "\n"
+        << "Bias: "
+        << neuron->bias;
+    }
 
 private:
+    std::vector<Layer*> layers;
+    double numberOfLayers;
 };
 
 
