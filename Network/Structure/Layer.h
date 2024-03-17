@@ -22,11 +22,9 @@ public:
     }
 
     void initLayer(){
-        RandomNumberGenerator numberGenerator;
         for(int i = 0; i<numberOfNeurons;i++){
-            Neuron* neuron = new Neuron(numberGenerator.getRandomDouble(0,1),
-                                        numberGenerator.getRandomDouble(0,1));
-            neuron->initNeuron();//currently, does nothing
+            Neuron* neuron = new Neuron();
+            neuron->initNeuron(numberOfNeurons);//currently, does nothing
             nodes.push_back(neuron);
         }
     }
