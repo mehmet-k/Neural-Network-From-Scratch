@@ -50,7 +50,7 @@ public:
     void printSpecifiedConnectionWeightAndBias(int prevNeuronIndex,
                                                int postLayerIndex, int postNeuronIndex){
 
-        Neuron * neuron = layers.at(postLayerIndex)->nodes.at(postNeuronIndex));
+        Neuron * neuron = layers.at(postLayerIndex)->nodes.at(postNeuronIndex);
         std::cout<< "Weigt: " <<
         neuron->outputWeights.at(prevNeuronIndex)
         << "\n"

@@ -55,12 +55,6 @@ build CMakeFiles/Neural_Network_From_Stcratch.dir/main.cpp.obj: CXX_COMPILER__Ne
   OBJECT_DIR = CMakeFiles\Neural_Network_From_Stcratch.dir
   OBJECT_FILE_DIR = CMakeFiles\Neural_Network_From_Stcratch.dir
 
-build CMakeFiles/Neural_Network_From_Stcratch.dir/test.cpp.obj: CXX_COMPILER__Neural_Network_From_Stcratch_Debug D$:/Workspace/Neural-Network-From-Stcratch/Network/test.cpp || cmake_object_order_depends_target_Neural_Network_From_Stcratch
-  DEP_FILE = CMakeFiles\Neural_Network_From_Stcratch.dir\test.cpp.obj.d
-  FLAGS = -g -std=gnu++23
-  OBJECT_DIR = CMakeFiles\Neural_Network_From_Stcratch.dir
-  OBJECT_FILE_DIR = CMakeFiles\Neural_Network_From_Stcratch.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Neural_Network_From_Stcratch
@@ -69,7 +63,7 @@ build CMakeFiles/Neural_Network_From_Stcratch.dir/test.cpp.obj: CXX_COMPILER__Ne
 #############################################
 # Link the executable Neural_Network_From_Stcratch.exe
 
-build Neural_Network_From_Stcratch.exe: CXX_EXECUTABLE_LINKER__Neural_Network_From_Stcratch_Debug CMakeFiles/Neural_Network_From_Stcratch.dir/main.cpp.obj CMakeFiles/Neural_Network_From_Stcratch.dir/test.cpp.obj
+build Neural_Network_From_Stcratch.exe: CXX_EXECUTABLE_LINKER__Neural_Network_From_Stcratch_Debug CMakeFiles/Neural_Network_From_Stcratch.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Neural_Network_From_Stcratch.dir
