@@ -21,6 +21,10 @@ public:
         this->activationFunction = activationFunction;
     }
 
+    Net(){
+
+    }
+
     void addLayer(int numberOfNeurons){
         numberOfLayers++;
         Layer* layer = new Layer(numberOfNeurons, this->activationFunction);
@@ -35,7 +39,6 @@ public:
     double predict(){
         return 0;
     }
-
 
 private:
 };

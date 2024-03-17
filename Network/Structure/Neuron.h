@@ -24,7 +24,7 @@ public:
             outputWeights.push_back(numberGenerator.getRandomDouble(0,1));
         }
     }
-    
+
 private:
 
 };
